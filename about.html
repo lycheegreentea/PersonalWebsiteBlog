@@ -9,21 +9,20 @@
 </head>
 <body class="bg-white dark:text-white dark:bg-black text-black width-full">
     <main class="grow">
-        <ul class=" flex items-center flex-row font-primary m-3 max-md:justify-center justify-between">
-                <li><a class = 'max-md:text-base text-[4vw] inline-flex hover:underline' href="index.html">⌂</a></li>
-                <li>
-                    <a class=" max-md:text-base text-[2vw] hover:underline  " href="about.html" >About</a>
-                    <a  class =" max-md:text-base text-[2vw] hover:underline  " href="contact.asp">Portfolio</a>
-                    <a  class =" max-md:text-base text-[2vw] hover:underline   " href="contact.asp">Blog</a>
-                    <button class=' max-md:text-base text-[2vw] hover:underline' id="themeToggle" onclick="changeMode()">☀︎</button>
-                </li>
-            </ul>
-        <div class="flex flex-row justify-center mt-8 max-md:flex-col items-center">
-            <div class="flex flex-col">
-                <h1 class="max-md:text-center  max-md:text-[15vw] max-md:w-full text-[8vw] font-secondary mt-[1vw] mb-0 mp-0 justify-right">About</h1>
-                <div class="font-thin flex max-md:flex-col">
-                    <div class="bg-black text-white dark:invert flex flex-col font-ternary p-[5vw] rounded-[4vw] m-[1vw]">
-                        <button class="bg-white text-black dark:invert  p-[1vw] rounded-[3vw]" id = "runButton">Run ►</button>
+        <ul class=" flex items-center flex-row font-primary m-3 max-md:justify-center max-md:gap-4 ">
+                <li><a class = 'ml-[1.5vw] justify-start max-md:text-lg text-[4vw] inline-flex hover:underline' href="index.html">⌂</a></li>
+                <li class=" flex md:flex-1 justify-end md:gap-9 max-md:gap-4 mr-[1.5vw]">
+                    <a class=" text-lg  md:text-[2vw] hover:underline " href="about.html">About</a>
+                    <a  class =" text-lg  md:text-[2vw] hover:underline  " href="contact.asp">Portfolio</a>
+                    <a  class =" text-lg  md:text-[2vw] hover:underline   " href="contact.asp">Blog</a>
+                    <button class=' text-lg  md:text-[2vw] hover:underline ' id="themeToggle" onclick="changeMode()">☀︎</button></li>
+        </ul>
+        <div class="max-w-[90vw] mx-auto flex flex-1 flex-row w-full  mt-8 max-md:flex-col items-center">
+            <div class="flex flex-col w-full">
+                <h1 class="max-md:text-center max-md:text-[15vw] max-md:w-full text-[8vw] font-secondary mt-[1vw] mb-0 mp-0 justify-right">About</h1>
+                <div class="w-full justify-center md:text-[1.1rem] text-[.7rem]  font-thin flex max-md:flex-col">
+                    <div class="w-full bg-black text-white dark:invert flex flex-col font-ternary p-[1.5vw] rounded-[1vw] max-md:rounded-[2vw] m-[1vw]">
+                        <button class="bg-white text-black dark:invert  mb-1 p-[1vw] rounded-[3vw] w-30 mx-auto"  onclick="showOutput()" id = "runButton">Run ►</button>
                         <p>public class Main{</p>
                         <p>&nbsp;&nbsp;&nbsp;&nbsp;public static void main(String[] args) {</p>
                         <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;person lauren = new person();</p>
@@ -31,9 +30,9 @@
                         <p>&nbsp;&nbsp;&nbsp;&nbsp;}</p>
                         <p>}</p>
                     </div>
-                    <div class="bg-black text-white dark:invert font-ternary p-[5vw] rounded-[4vw] m-[1vw]">
+                    <div class="bg-black text-white dark:invert font-ternary p-[1.5vw] rounded-[1vw] max-md:rounded-[2vw] w-full m-[1vw]">
                         <p>output:</p>
-                        <p id="output"></p>
+                        <p class ="whitespace-pre-wrap" id="output"></p>
                     </div>
                 </div>
                 
