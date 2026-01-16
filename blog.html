@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lauren Chen</title> 
+    <link href="dist.css" rel="stylesheet">
+</head>
+
+<body class="min-h-0 h-screen flex flex-col bg-white dark:text-white dark:bg-black text-black width-full">
+        <ul class=" flex items-center flex-row font-primary m-3 max-md:justify-center max-md:gap-4 ">
+                <li><a class = 'ml-[1.5vw] justify-start max-md:text-lg text-[4vw] inline-flex hover:underline' href="index.html">⌂</a></li>
+                <li class=" flex md:flex-1 justify-end md:gap-9 max-md:gap-4 mr-[1.5vw]">
+                    <a class=" text-lg  md:text-[2vw] hover:underline " href="about.html">About</a>
+                    <a  class =" text-lg  md:text-[2vw] hover:underline  " href="contact.asp">Portfolio</a>
+                    <a  class =" text-lg  md:text-[2vw] hover:underline   " href="blog.html">Blog</a>
+                    <button class=' text-lg  md:text-[2vw] hover:underline ' id="themeToggle" onclick="changeMode()">☀︎</button></li>
+        </ul>
+        <!--Scroller-->
+            <div class="ml-5 min-h-0 h-full  max-md:order-5 max-md:flex-col flex flex-row items-stretch font-primary">
+
+            
+                    <!-- Microblog -->
+                    <div class="h-full md:w-1/4 min-h-0 font-quaternary overflow-y-auto max-md:order-3 LEFT p-4">
+                        <h1 class="font-primary md:text-6xl text-4xl 0">microblog</h1>
+                        <p class=" md:text-2xl break-word">thoughts x 10^-6! inspired by akshith.io/writing</p>
+                        <div class="ENTRIES my-2 md:text-4xl">
+                            <div>
+                                <p class="flex-end md:text-2xl text-gray-400">1/16/25</p>
+                                <div class="font-quaternary microentry  mx-auto flex  border p-2  rounded-xl max-w-2xl">
+                                    <p class="md:text-2xl">hihihihi</p>
+                                </div>
+                            </div>
+                            <div>
+                                <p class="flex-end md:text-2xl text-gray-400">1/16/25</p>
+                                <div class="font-quaternary microentry  mx-auto flex  border p-2  rounded-xl max-w-2xl">
+                                    <p class="md:text-2xl">hihihihi</p>
+                                </div>
+                            </div>
+                            <div>
+                                <p class="flex-end md:text-2xl text-gray-400">1/16/25</p>
+                                <div class="font-quaternary microentry  mx-auto flex  border p-2  rounded-xl max-w-2xl">
+                                    <p class="md:text-2xl">hihihihi</p>
+                                </div>
+                            </div>
+                            <div>
+                                <p class="flex-end md:text-2xl text-gray-400">1/16/25</p>
+                                <div class="font-quaternary microentry  mx-auto flex  border p-2  rounded-xl max-w-2xl">
+                                    <p class="md:text-2xl">hihihihi</p>
+                                </div>
+                            </div>
+                            <div>
+                                <p class="flex-end md:text-2xl text-gray-400">1/16/25</p>
+                                <div class="font-quaternary microentry  mx-auto flex  border p-2  rounded-xl max-w-2xl">
+                                    <p class="md:text-2xl">hihihihi</p>
+                                </div>
+                            </div>
+                            <div>
+                                <p class="flex-end md:text-2xl text-gray-400">1/16/25</p>
+                                <div class="font-quaternary microentry  mx-auto flex  border p-2  rounded-xl max-w-2xl">
+                                    <p class="md:text-2xl">hihihihi</p>
+                                </div>
+                            </div>
+                            <div>
+                                <p class="flex-end md:text-2xl text-gray-400">1/16/25</p>
+                                <div class="font-quaternary microentry  mx-auto flex  border p-2  rounded-xl max-w-2xl">
+                                    <p class="md:text-2xl">hihihihi</p>
+                                </div>
+                            </div>
+                            <div>
+                                <p class="flex-end md:text-2xl text-gray-400">1/16/25</p>
+                                <div class="font-quaternary microentry  mx-auto flex  border p-2  rounded-xl max-w-2xl">
+                                    <p class="md:text-2xl">hihihihi</p>
+                                </div>
+                            </div>
+                            <div>
+                                <p class="flex-end md:text-2xl text-gray-400">1/16/25</p>
+                                <div class="font-quaternary microentry  mx-auto flex  border p-2  rounded-xl max-w-2xl">
+                                    <p class="md:text-2xl">hihihihi</p>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    
+                    <!-- Divider -->
+                    <div class="md:h-full max-md:order-1 max-md:border-t-2 md:border-l-2 border-gray-300 max-md:w-full h-auto"></div>
+
+                    <!-- Blog -->
+                        <div class="h-full md:w-3/4 min-h-0 overflow-y-auto max-md:order-0 RIGHT p-4">
+
+                        
+                            <h1 class=" font-primary md:text-6xl text-4xl">blog</h1>
+                            <div class="blogEntries"> 
+                                <div class="md:text-4xl font-quaternary blogentry bg-gray-200 rounded-xl p-4 my-4 max-w-3xl">
+                                    <h1 class="my-1">Title</h1>
+                                    <h2 class="my-1 md:text-2xl">description</h2>
+                                </div>
+                                <div class="md:text-4xl font-quaternary blogentry bg-gray-200 rounded-xl p-4 my-4 max-w-3xl">
+                                    <h1 class="my-1">Title</h1>
+                                    <h2 class="my-1 md:text-2xl">description</h2>
+                                    </div>
+                                </div>
+                                
+                                <div class="md:text-4xl font-quaternary blogentry bg-gray-200 rounded-xl p-4 my-4 max-w-3xl">
+                                    <h1 class="my-1">Title</h1>
+                                    <h2 class="my-1 md:text-2xl">description</h2>
+                                </div>
+                                <div class="md:text-4xl font-quaternary blogentry bg-gray-200 rounded-xl p-4 my-4 max-w-3xl">
+                                    <h1 class="my-1">Title</h1>
+                                    <h2 class="my-1 md:text-2xl">description</h2>
+                                </div>
+                                <div class="md:text-4xl font-quaternary blogentry bg-gray-200 rounded-xl p-4 my-4 max-w-3xl">
+                                    <h1 class="my-1">Title</h1>
+                                    <h2 class="my-1 md:text-2xl">description</h2>
+                                </div>
+                                <div class="md:text-4xl font-quaternary blogentry bg-gray-200 rounded-xl p-4 my-4 max-w-3xl">
+                                    <h1 class="my-1">Title</h1>
+                                    <h2 class="my-1 md:text-2xl">description</h2>
+                                </div>
+                                <div class="md:text-4xl font-quaternary blogentry bg-gray-200 rounded-xl p-4 my-4 max-w-3xl">
+                                    <h1 class="my-1">Title</h1>
+                                    <h2 class="my-1 md:text-2xl">description</h2>
+                                </div>
+                                <div class="md:text-4xl font-quaternary blogentry bg-gray-200 rounded-xl p-4 my-4 max-w-3xl">
+                                    <h1 class="my-1">Title</h1>
+                                    <h2 class="my-1 md:text-2xl">description</h2>
+                                </div>
+                                <div class="md:text-4xl font-quaternary blogentry bg-gray-200 rounded-xl p-4 my-4 max-w-3xl">
+                                    <h1 class="my-1">Title</h1>
+                                    <h2 class="my-1 md:text-2xl">description</h2>
+                                </div>
+                                <div class="md:text-4xl font-quaternary blogentry bg-gray-200 rounded-xl p-4 my-4 max-w-3xl">
+                                    <h1 class="my-1">Title</h1>
+                                    <h2 class="my-1 md:text-2xl">description</h2>
+                                </div>
+                            </div>                           
+                    </div>
+        </div>
+    <script src="site.js"></script>
+</body>
+</html>

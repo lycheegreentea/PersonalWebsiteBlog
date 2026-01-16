@@ -1,11 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <script src="site.js"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lauren Chen</title> 
+    
     <link href="dist.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <style>
+    .stage, .container, .ring {
+        transform-style: preserve-3d !important;
+        will-change: transform;
+    }
+    
+    .img {
+        position: absolute;
+        width: 300px; 
+        height: 400px;
+        left: 50%;
+        top: 50%;
+        margin-left: -150px;
+        margin-top: -200px;
+        backface-visibility: hidden;
+    }
+</style>
+    
 </head>
 <body class="bg-white dark:text-white dark:bg-black text-black width-full">
     <main class="grow">
@@ -14,7 +35,7 @@
                 <li class=" flex md:flex-1 justify-end md:gap-9 max-md:gap-4 mr-[1.5vw]">
                     <a class=" text-lg  md:text-[2vw] hover:underline " href="about.html">About</a>
                     <a  class =" text-lg  md:text-[2vw] hover:underline  " href="contact.asp">Portfolio</a>
-                    <a  class =" text-lg  md:text-[2vw] hover:underline   " href="contact.asp">Blog</a>
+                    <a  class =" text-lg  md:text-[2vw] hover:underline   " href="blog.html">Blog</a>
                     <button class=' text-lg  md:text-[2vw] hover:underline ' id="themeToggle" onclick="changeMode()">☀︎</button></li>
         </ul>
         <div class="max-w-[90vw] mx-auto flex flex-1 flex-row w-full  mt-8 max-md:flex-col items-center">
@@ -38,8 +59,47 @@
                 
               
                 <h1 class="max-md:text-center max-md:text-[15vw] max-md:w-full text-[8vw] font-secondary mt-[1vw] mb-0 mp-0 justify-right">Gallery</h1>
+<div class="stage flex items-center justify-center bg-transparent relative w-full h-[600px] overflow-visible border-none outline-none" style="perspective: 2000px;">
+    <div class="container w-0 h-0 absolute border-none outline-none" style="transform-style: preserve-3d;">
+        <div class="ring w-0 h-0 absolute border-none outline-none" style="transform-style: preserve-3d;">
+            <div class="img bg-contain border-none outline-none"></div>
+            <div class="img bg-contain border-none outline-none"></div>
+            <div class="img bg-contain border-none outline-none"></div>
+            <div class="img  bg-contain border-none outline-none"></div>
+
+            <div class="img bg-contain border-none outline-none"></div>
+            <div class="img bg-contain border-none outline-none"></div>
+            <div class="img bg-contain border-none outline-none"></div>
+            <div class="img bg-contain border-none outline-none"></div>
+            <div class="img bg-contain border-none outline-none"></div>
+            <div class="img bg-contain border-none outline-none"></div>
+        </div>
+    </div>
+</div>
+
                 <h1 class="max-md:text-center  max-md:text-[15vw] max-md:w-full text-[8vw] font-secondary mt-[1vw] mb-0 mp-0 justify-right">Bookshelf</h1>
-                <h1 class="max-md:text-center max-md:text-[15vw] max-md:w-full text-[8vw] font-secondary mt-[1vw] mb-0 mp-0 justify-right">Experience</h1>
+                     <div class="photos flex flex-wrap justify-center gap-4">
+                        <button onclick="babelBook()">
+                            <img class="transition-transform duration-300 hover:scale-105 w-48 h-auto object-contain" src="/images/books/babel.webp">
+                        </button>
+                        <button onclick="bookOfGoose()">
+                            <img class="transition-transform duration-300 hover:scale-105 w-48 h-auto object-contain" src="/images/books/bookOfGoose.webp">
+                        </button>
+                        <button onclick="secretHistory()">
+                            <img class="transition-transform duration-300 hover:scale-105 w-48 h-auto object-contain" src="/images/books/secretHistory.webp">
+                        </button>
+                        <button onclick="starlessSea()">
+                            <img class="transition-transform duration-300 hover:scale-105 w-48 h-auto object-contain" src="/images/books/starlessSea.webp">
+                        </button>
+                        <button onclick="coffee()">
+                            <img class="transition-transform duration-300 hover:scale-105 w-48 h-auto object-contain" src="/images/books/coffee.webp">
+
+                        </button>
+
+                    </div>
+                    <div id="bookDescription" class="font-primary mx-auto flex justify-center bg-gray-200 p-8 m-9 rounded-xl max-w-2xl">
+                        <p>Click a book to see my review!</p>
+                    </div>
 
 
             </div>
@@ -54,5 +114,6 @@
             </ul>
         </div>
     </footer>
+     <script src="site.js"></script>
 </body>
 </html>
