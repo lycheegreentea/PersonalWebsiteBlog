@@ -12,8 +12,10 @@ if(localStorage.theme === 'dark'){
 
 function showOutput(){
     const area = document.getElementById("output");
-    const text = `Hi I'm Lauren
-i like cs`;
+    const text = `Hi, I'm Lauren
+Languages: Chinese, toki pona(learning) python, java, swift, html/javascript/css 
+
+`;
 
     let i = 0;
     area.textContent = "";
