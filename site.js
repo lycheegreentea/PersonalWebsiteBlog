@@ -31,27 +31,30 @@ Languages: Chinese, toki pona(learning) python, java, swift, html/javascript/css
 
 function babelBook(){
     const descArea = document.getElementById("bookDescription");
-    descArea.textContent="I like babel";
+    descArea.innerHTML='<p class="dark:invert text-center w-full">FAVORITE BOOK 10/10</p>';
+
 }
 
 function bookOfGoose(){
     const descArea = document.getElementById("bookDescription");
-    descArea.textContent="I like babel";
+    descArea.innerHTML='<p class="dark:invert text-center w-full">This is a really cool book that I only picked up because it had the word goose in it, but it turned out to be really really good. I love the writing style.</p>';
+
 }
 
 function secretHistory(){
     const descArea = document.getElementById("bookDescription");
-    descArea.textContent="I like babel";
+    descArea.innerHTML='<p class="dark:invert text-center w-full">Almost done with this one...</p>';
+
 }
 
 function starlessSea(){
     const descArea = document.getElementById("bookDescription");
-    descArea.textContent="I like babel";
+    descArea.innerHTML='<p class="dark:invert text-center w-full">fantasy is good!</p>';
 }
 
 function coffee(){
     const descArea = document.getElementById("bookDescription");
-    descArea.textContent="I like babel";
+    descArea.innerHTML='<p class="dark:invert text-center w-full">Cats + time travel = good book</p>';
 }
 
 
